@@ -1,2 +1,2 @@
-# yuuzone-ng-template
+# YUUZone
 Frontend template of Angular
