@@ -1,0 +1,102 @@
+/* Reset styles */
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", Helvetica, "Microsoft YaHei", Arial;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+
+    input[type=button],
+    input[type=reset],
+    input[type=submit] {
+      cursor: pointer;
+      -webkit-appearance: button;
+    }
+}
+
+a,
+a div,
+a span,
+button,
+button div,
+button span,
+input,
+textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+a {
+  background-color: transparent;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+a[disabled],
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+em {
+    font-style:normal;
+}
+
+.d-flex() {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.title-size {
+  font-size: @TitleSize;
+}
+
+.title-color {
+ color: @TitleColor;
+}
+
+.message-size {
+  font-size: @MessageSize;
+}
+
+.message-color {
+  color: @MessageColor;
+}
+
+.content-size {
+  font-size: @ContentSize;
+}
+
+.am-list-item .am-list-line .am-list-content {
+  color: @TitleColor;
+  font-size: @ContentSize;
+}
+
+.am-list-item .am-list-line .am-list-extra {
+  color: @MessageColor;
+  font-size: @ContentSize;
+}

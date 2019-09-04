@@ -1,0 +1,16 @@
+{{welcome}}
+<h2>Sample</h2>
+<ace-editor 
+    #editor
+    [(text)]="text"
+    [mode]="'sql'" 
+    [theme]="'eclipse'"
+    [options]="options"
+    [readOnly]="false"
+    [autoUpdateContent]="true" 
+    [durationBeforeCallback]="1000" 
+    (textChanged)="onChange($event)"
+    style="min-height: 200px; width:100%; overflow: auto;">
+</ace-editor>
+
+{{text}}

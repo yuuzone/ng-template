@@ -1,0 +1,16 @@
+<nz-layout class="layout">
+    <nz-header>
+        <ul nz-menu [nzTheme]="'dark'" [nzMode]="'horizontal'" style="line-height: 64px;">
+            <li nz-menu-item [routerLink]="['/management/user']">用户列表</li>
+        </ul>
+    </nz-header>
+    <nz-content style="padding:0 50px;">
+        <nz-breadcrumb style="margin:16px 0;">
+            <nz-breadcrumb-item>{{routeUrl}}</nz-breadcrumb-item>
+        </nz-breadcrumb>
+        <div style="background:#fff; padding: 24px; min-height: 280px;">
+            <router-outlet></router-outlet>
+        </div>
+    </nz-content>
+    <nz-footer style="text-align: center;"></nz-footer>
+</nz-layout>
